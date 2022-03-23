@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="no1">
+    <button onclick="calculate()">submit</button>
+
+    <script>
+        function calculate()
+        {
+        var sal = document.getElementById("no1").value;
+
+        if (sal<1500)
+        {
+            HRA=sal*10/100;
+            DA=sal*90/100;
+        }
+        else
+        {
+            HRA=500;
+            DA=sal*98/100;
+        }
+
+        gross = parseInt(sal)+parseInt(HRA)+parseInt(DA);
+                document.write("display value of gross salary =" + gross);
+
+            }      
+    </script>
+</body>
+</html>
